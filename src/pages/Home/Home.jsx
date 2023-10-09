@@ -1,18 +1,13 @@
+import Navbar from "../../components/Navbar/Navbar"
+import Button from "../../components/Navbar/button/Button"
+
 const Home = () => {
     return (
    <div>
-    <header>
-          <nav>
-              <div className="container">
-                  <h1><a href="#">Milan Paudel</a></h1>
-                  <ul>
-                      <li><a href="/">Home</a></li>
-                      <li><a href="/about">About</a></li>
-                      <li><a href="/contact">Contact</a></li>
-                  </ul>
-              </div>
-          </nav>
-      </header>
+        <Navbar />
+        <Button title='Login' color='red'/>
+        {/* <Button title='Login', subTitle='Forgot'/> */}
+        <Button title='Signup' color='green'/>
   
       <section className="hero">
           <div className="container">
@@ -22,11 +17,10 @@ const Home = () => {
       </section>
       
       <footer>
-          <div className="container">
+          <div className="container"/>
               <p>&copy; 2023 Milan. All rights reserved.</p>
-          </div>
       </footer>
-   </div>
+    </div>
     )
   }
   

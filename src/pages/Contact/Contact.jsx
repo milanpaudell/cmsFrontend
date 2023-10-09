@@ -1,21 +1,12 @@
+import Navbar from '../../components/Navbar/Navbar'
+import Button from '../../components/Navbar/button/Button'
 import './Contact.css'
 
 const Contact = () => {
   return (
     <div>
-      <header>
-        <nav>
-            <div className="container">
-                <h1><a href="index.html">Milan Paudel</a></h1>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    {/* <li><a href="courses.html">Courses</a></li> */}
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+      
+      <Navbar />
 
     <section className="contact">
         <div className="container">
@@ -32,7 +23,8 @@ const Contact = () => {
                 <label htmlFor="asdf">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
                 
-                <button type="submit" className="btn">Submit</button>
+                <Button />
+                {/* <button type="submit" className="btn">Submit</button> */}
             </form>
         </div>
     </section>
